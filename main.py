@@ -46,7 +46,64 @@ class Library:
     self.cboMemberType['value'] = ('','Student', 'Lecturer', 'Admin Staff')
     self.cboMemberType.current(0)
     self.cboMemberType . grid (row = 0, column = 1)
+   
+    self.lblBookID = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Book ID: ", padx=2, pady=2)
+    self.lblBookID . grid(row = 0, column = 2, sticky = W)
+	 self.lblBookID = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'), width = 25)
+    self.lblBookID . grid(row = 0, column = 3)
+   
+    self.lblRef = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Reference No: ", padx=2, pady=2)
+    self.lblRef . grid(row = 0, column = 0, sticky = W)
+    self.txtRef = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtRef . grid(row = 1, column = 1)
 
+	 self.lblBookTitle = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Book Title: ", padx=2, pady=2)
+    self.lblBookTitle . grid(row = 1, column = 2, sticky = W)
+    self.txtBookTitle = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtBookTitle . grid(row = 1, column = 3)
+   
+    self.lblBookTitle = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Title: ", padx=2, pady=2)
+    self.lblBookTitle . grid(row = 2, column = 0 , sticky = W)
+
+    self.cboTitle = ttk.Combobox(DataFrameLEFT, state = 'readonly', font = ('arial', 12, 'bold'), width = 23)
+    self.cboTitle['value'] = ('','Mr.', 'Miss.', 'Mrs', 'Dr.', 'Capt.', 'Ms.')
+    self.cboTitle.current(0)
+    self.cboTitle. grid (row = 2, column = 1)
+   
+    self.lblAuthor = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Author: ", padx=2, pady=2)
+    self.lblAuthor. grid(row = 2, column = 2, sticky = W)
+    self.txtAuthor = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtAuthor . grid(row = 2, column = 3)
+   
+    self.lblFirstName = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "First Name: ", padx=2, pady=2)
+    self.lblFirstName. grid(row = 3, column = 0, sticky = W)
+    self.txtFirstName = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtFirstName . grid(row = 3, column = 1)
+   
+    self.lblDateBorrowed = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Date Borrowed: ", padx=2, pady=2)
+    self.lblDateBorrowed. grid(row = 3, column = 2, sticky = W)
+    self.txtDateBorrowed = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtDateBorrowed . grid(row = 3, column = 3)
+   
+    self.lblLastName = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Last Name: ", padx=2, pady=2)
+    self.lblLastName. grid(row = 4, column = 0, sticky = W)
+    self.txtLastName = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtLastName . grid(row = 4, column = 1)
+   
+    self.lblDateDue = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "First Name: ", padx=2, pady=2)
+    self.lblDateDue. grid(row = 3, column = 0, sticky = W)
+    self.txtDateDue = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtDateDue. grid(row = 3, column = 1)
+   
+
+   
+   
+   
+   
+   
+   #no address 1 or adress 2, post code, mobile number = student id 
+   
+ 
 
 if __name__=='__main__':
     root = Tk()
