@@ -85,24 +85,64 @@ class Library:
     self.txtDateBorrowed = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
     self.txtDateBorrowed . grid(row = 3, column = 3)
    
-    self.lblLastName = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Last Name: ", padx=2, pady=2)
+    self.lblLastName = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Last Name: ", padx=2, pady=6)
     self.lblLastName. grid(row = 4, column = 0, sticky = W)
     self.txtLastName = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
     self.txtLastName . grid(row = 4, column = 1)
    
-    self.lblDateDue = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "First Name: ", padx=2, pady=2)
+    self.lblDateDue = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Date Due: ", padx=2, pady=2)
     self.lblDateDue. grid(row = 3, column = 0, sticky = W)
     self.txtDateDue = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
-    self.txtDateDue. grid(row = 3, column = 1)
+    self.txtDateDue. grid(row = 4, column = 3)
+   
+    self.lblAddress1 = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Address 1: ", padx=2, pady=2)
+    self.lblAddress1. grid(row = 5, column = 0, sticky = W)
+    self.txtAddress1 = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtAddress1. grid(row = 5, column = 1)
+   
+    self.lblDaysOnLoan = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Days On Loan: ", padx=2, pady=2)
+    self.lblDaysOnLoan. grid(row = 5, column = 2, sticky = W)
+    self.txtDaysOnLoan = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtDaysOnLoan. grid(row = 5, column = 3)
+   
+    self.lblAddress2 = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Address 2: ", padx=2, pady=2)
+    self.lblAddress2. grid(row = 6, column = 0, sticky = W)
+    self.txtAddress2 = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtAddress2. grid(row = 6, column = 1)
+   
+    self.lblLateReturnFine = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Late Return Fine: ", padx=2, pady=2)
+    self.lblLateReturnFine. grid(row = 6, column = 2, sticky = W)
+    self.txtLateReturnFine = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtLateReturnFine. grid(row = 6, column = 3)
+   
+    self.lblPostCode = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Post Code: ", padx=2, pady=2)
+    self.lblPostCode. grid(row = 7, column = 0, sticky = W)
+    self.txtPostCode = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtPostCode. grid(row = 7, column = 1)
+     
+    self.lblDateoverDue = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Date over Due: ", padx=2, pady=2)
+    self.lblDateOverDue. grid(row = 7, column = 2, sticky = W)
+    self.txtDateOverDue = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtDateOverDue. grid(row = 7, column = 3)
+   
+    self.lblMobileNo = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Mobile No: ", padx=2, pady=2)
+    self.lblMobileNo. grid(row = 8, column = 0, sticky = W)
+    self.txtMobileNo = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtMobileNo. grid(row = 8, column = 1)
+   
+    self.lblSellingPrice = Label(DataFrameLEFT, font = ('arial', 12, 'bold'), text = "Selling Price: ", padx=2, pady=2)
+    self.lblSellingPrice. grid(row = 8, column = 2, sticky = W)
+    self.txtSellingPrice = Entry(DataFrameLEFT, font = ('arial', 12, 'bold'),width = 25)
+    self.txtSellingPrice. grid(row = 8, column = 3)
    
 
    
    
    
    
-   
-   #no address 1 or adress 2, post code, mobile number = student id 
-   
+   # member type, reference no, title, first name, last name, address 1, address 2, post code, mobile no, book id, book title , author, date borrowed, date due, days on loan, late return fine, date over due, selling price 
+   # member type, book id, title, first name, last name, mobile number, book title, author, date borrowed, date due, days on loan, cost of book 
+   #20:11
  
 
 if __name__=='__main__':
